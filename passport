@@ -1,10 +1,16 @@
 int main()
 {
+	int ch = 0;
 	int ret = 0;
 	char password[20] = { 0 };
 	printf("请输入密码:>");
 	scanf("%s", password);//输入密码，并存放在password数组中//%s--字符串
-	getchar();
+	//缓冲区还剩余一个'\n'
+	//读取一个'\n'
+	while ((ch = getchar()) != '\n')//负责读取缓冲区剩余的\n，清空缓冲区
+	{
+		;
+	}
 	printf("请确认（Y/N）:>");
 	ret = getchar();//Y/N
 	if (ret == 'Y')
