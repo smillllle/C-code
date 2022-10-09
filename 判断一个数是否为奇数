@@ -1,0 +1,9 @@
+int main()
+{
+	int i = 6;
+	if (i % 2 == 1)
+		printf("i为奇数\n");
+	else
+		printf("i为偶数\n");
+	return 0;
+}
