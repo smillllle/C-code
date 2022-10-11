@@ -5,7 +5,7 @@ int main()
 	int n = 0;
 	int sum = 0;
 	//1+2+6=9
-	for (n = 1; n <= 3; n++)
+	for (n = 1; n <= 10; n++)
 	{
 		ret = 1;
 		for (i = 1; i <= n; i++)
@@ -17,4 +17,5 @@ int main()
 	}
 	printf("sum= %d\n", sum);
 	return 0;
-}
+	}
+	
