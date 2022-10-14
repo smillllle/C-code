@@ -1,0 +1,17 @@
+int main()
+{
+	char arr1[] = "i love you";
+	char arr2[] = "          ";
+	int left = 0;
+	int sz = sizeof(arr1) / sizeof(arr1[0]);
+	while (left <= sz)
+	{
+		arr2[left] = arr1[left];
+		printf("%s\n", arr2);
+		left++;
+		Sleep(500);
+		system("cls");
+	}
+	printf("%s\n", arr2);
+	return 0;
+}
